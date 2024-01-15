@@ -1,3 +1,34 @@
+Database Setup Instructions
+---------------------------
+
+To begin using the database in this C# application, follow these steps:
+
+### 1\. Execute Initial SQL Query
+
+Run the `query.sql` script in your MySQL database to set up the necessary tables and structure. This script contains the initial schema required for the application.
+
+### 2\. Configure Database Connection
+
+Open the `DBConnect.cs` file and provide your own database connection details. Modify the connection string to include the correct server, username, password, and database name for your local MySQL setup.
+
+csharpCopy code
+
+`string connectionString = "Server=<your_server>;Database=<your_database>;User Id=<your_username>;Password=<your_password>;";`
+
+### 3\. Install MySql.Data Package
+
+Ensure that the `MySql.Data` package is installed. You can do this using the NuGet Package Manager. If not installed, execute the following command in the NuGet Package Manager Console:
+
+bashCopy code
+
+`Install-Package MySql.Data`
+
+### Note:
+
+*   Replace `<your_server>`, `<your_database>`, `<your_username>`, and `<your_password>` with your actual MySQL server details.
+
+Now you should be ready to use the C# application with your local MySQL database. Make sure your MySQL server is running before running the application. If any issues arise during setup, refer to error messages for troubleshooting.
+
 ### Database Management in C# Application
 
 The C# application utilizes a MySQL database to manage data related to users and gas stations in a gas station system. The implementation involves several key aspects of database management:
