@@ -11,18 +11,17 @@ Run the `query.sql` script in your MySQL database to set up the necessary tables
 
 Open the `DBConnect.cs` file and provide your own database connection details. Modify the connection string to include the correct server, username, password, and database name for your local MySQL setup.
 
-csharpCopy code
-
-`string connectionString = "Server=<your_server>;Database=<your_database>;User Id=<your_username>;Password=<your_password>;";`
+```csharp
+string connectionString = "Server=<your_server>;Database=<your_database>;User Id=<your_username>;Password=<your_password>;";
+```
 
 ### 3\. Install MySql.Data Package
 
 Ensure that the `MySql.Data` package is installed. You can do this using the NuGet Package Manager. If not installed, execute the following command in the NuGet Package Manager Console:
 
-bashCopy code
-
-`Install-Package MySql.Data`
-
+```bash code
+Install-Package MySql.Data
+```
 ### Note:
 
 *   Replace `<your_server>`, `<your_database>`, `<your_username>`, and `<your_password>` with your actual MySQL server details.
